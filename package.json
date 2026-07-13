@@ -3,8 +3,16 @@
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
-
-      "test": "cucumber-js test"
+ "test": "cucumber-js",
+      "test:add": "cucumber-js --tags \"@add\"",
+      "test:header": "cucumber-js --tags \"@header\"",
+      "test:delete": "cucumber-js --tags \"@delete\"",
+      "test:complete": "cucumber-js --tags \"@complete\"",
+      "test:filter": "cucumber-js --tags \"@filter\"",
+      "test:edit": "cucumber-js --tags \"@edit\"",
+      "test:clearCompleted": "cucumber-js --tags \"@clearCompleted\"",
+      "test:toggleAll": "cucumber-js --tags \"@toggleAll\"",
+      "test:negative": "cucumber-js --tags \"@invalidAdd or @clearCompleted\""
   },
   "keywords": [],
   "author": "",
